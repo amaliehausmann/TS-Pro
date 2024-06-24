@@ -1,0 +1,22 @@
+@use '../helpers/variables' as *;
+
+.menu{
+    width: 4vw;
+    background-color: $blue;
+    height: 100vh;
+
+    #openArrow{
+        width: 2.5vw;
+        margin-left: 1.3vw;
+        margin-top: 0.5vw;
+    }
+
+    #closeArrow{
+        width: 2.5vw;
+        display: none;
+    }
+
+    #navigation{
+        display: none;
+    }
+}

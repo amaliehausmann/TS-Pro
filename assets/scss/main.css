@@ -1,0 +1,26 @@
+header {
+  background-color: #1e1e1e;
+  padding: 2vw 2vw;
+}
+
+.menu {
+  width: 4vw;
+  background-color: #5355D6;
+  height: 100vh;
+}
+.menu #openArrow {
+  width: 2.5vw;
+  margin-left: 1.3vw;
+  margin-top: 0.5vw;
+}
+.menu #closeArrow {
+  width: 2.5vw;
+  display: none;
+}
+.menu #navigation {
+  display: none;
+}
+
+body {
+  margin: auto;
+}
