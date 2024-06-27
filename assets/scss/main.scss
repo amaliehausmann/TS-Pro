@@ -1,7 +1,16 @@
 @use './partials/header';
 @use './pages/homepage';
 @use './partials/menu';
+@use './partials/footer';
+@use './pages/getStarted';
+@use './pages/statictyping';
+@use './pages/installation';
+
 
 body{
     margin: auto;
+
+    main{
+        position: relative;
+    }
 }

@@ -3,12 +3,14 @@
 .menu{
     width: 4vw;
     background-color: $blue;
-    height: 100vh;
+    height: 101%;
+    padding-top: 1vw;
+    position: absolute;
 
     #openArrow{
         width: 2.5vw;
         margin-left: 1.3vw;
-        margin-top: 0.5vw;
+        margin-top: 0;
     }
 
     #closeArrow{
@@ -18,5 +20,16 @@
 
     #navigation{
         display: none;
+        margin-left: -4vw;
+        flex-direction: column;
+
+        a{
+            text-decoration: none;
+            color: $white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 1vw 0;
+            font-weight: 700;
+            font-size: 1vw;
+        }
     }
 }

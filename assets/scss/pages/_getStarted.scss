@@ -1,0 +1,110 @@
+@use '../helpers/variables' as *;
+
+.what{
+    h2{
+        font-size: 2vw;
+    }
+
+    h3{
+        font-size: 1.5vw;
+        padding: 0 18vw;
+    }
+
+    .gridOne{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 2vw 8vw;
+        gap: 2vw;
+        background-color: $darkerBlue;
+        margin-top: 3vw;
+
+        p{
+            font-size: 0.9vw;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            color: $white;
+        }
+    }
+}
+
+.why{
+    h2{
+        font-size: 2vw;
+        margin-top: 5vw;
+    }
+
+    h3{
+        font-size: 1.5vw;
+        padding: 0 18vw;
+    }
+
+    .gridTwo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2vw 8vw;
+        gap: 2vw;
+        background-color: $darkerBlue;
+        margin-top: 3vw;
+
+        p{
+            font-size: 0.9vw;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            color: $white;
+        }
+    }
+
+} 
+
+.usage{
+    h2{
+        font-size: 2vw;
+        margin-top: 5vw;
+    }
+
+    h3{
+        font-size: 1.5vw;
+    }
+
+    .gridThree{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 2vw 8vw;
+        gap: 2vw;
+        background-color: $darkerBlue;
+        margin-top: 3vw;
+
+        p{
+            font-size: 0.9vw;
+            color: $white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+    }
+}
+
+.proCon{
+
+    margin-bottom: 9vw;
+    h2{
+        font-size: 2vw;
+        margin-top: 5vw;
+    }
+
+    .gridFour{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 2vw 8vw;
+        gap: 2vw;
+        margin-top: 3vw;
+        background-color: $darkerBlue;
+
+        p{
+            font-size: 0.9vw;
+            color: $white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+
+        }
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS PRO: Installation</title>
+    <link rel="icon" href="./assets/images/TS.svg" type="image/x-icon">
+    <script src="./assets/TS/index.js" defer type="module"></script>
+    <link rel="stylesheet" href="./assets/scss/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="" alt="">
+        <a href="index.html"> <img src="./assets/images/TS PRO 2.svg" alt=""></a>
+    </header>
+    <main>
+        <div class="menu" id="menu">
+            <img id="openArrow" src="./assets/images/icons/arrow-next-small-svgrepo-com.svg" alt="">
+            <img id="closeArrow" src="./assets/images/icons/arrow-prev-small-svgrepo-com.svg" alt="">
+            <div id="navigation">
+                <a href="getStarted.html">Get Started</a>
+                <a href="installation.html">Installation</a>
+                <a href="statictyping.html">Static Typing</a>
+                <a href="">Link Four</a>
+                <a href="">Link Five</a>
+                <a href="">Link Six</a>
+                <a href="">Link Seven</a>
+                <a href="">Link Eight</a>
+                <a href="">Link Nine</a>
+                <a href="">Link Ten</a>
+            </div>
+        </div>
+        <div class="spacingTop"></div>
+        <div class="install">
+            <h2>Installation af TypeScript</h2>
+            <h3>Her vil du få en guide til hvordan du installerer TypeScript, så du kan bruge det i dit næste store
+                projekt!</h3>
+            <h4>1. Node.js og npm</h4>
+            <h5>Hvis du ikke allerede har installeret Node.js og npm på din pc, skal dette gøres først. Du kan
+                installere Node.js fra deres hjemmeside <a href="https://nodejs.org/en" target="_blank">HER</a> </h5>
+            <h5>Hvis du allerede har installeret Node.js og npm kan du springe dette trin over!</h5>
+            <h4>2. Åben terminalen i VS Code</h4>
+            <h5>Åben terminalen ved at taste Ctrl + J. Når terminalen er åben er du nu klar til at installere
+                TypeScript!</h5>
+            <h4>3. Installer TypeScript</h4>
+            <h5>Indtast følgende kommando i din terminal</h5>
+            <pre>
+            <code>
+                npm install -g typescript   
+            </code>
+        </pre>
+            <h5>Ved at skrive -g installerer du programmet globalt på din pc</h5>
+            <h4>4. Verificer installation</h4>
+            <h5>Du kan tjekke om TypeScript er blevet installeret ordentligt ved at skrive følgende kommando i
+                terminalen. Denne kommando viser hvilken version af TypeScript der anvendes, hvis det er installeret
+                korrekt</h5>
+            <pre>
+            <code>
+                tsc --version
+            </code>
+        </pre>
+            <h4>5. Opret en konfigureringsfil</h4>
+            <h5>Opret en TypeScript konfigureringsfil ved at indtaste følgende i terminalen. Dette vil oprette en fil med navnet
+                'tsconfig.json'.</h5>
+            <pre>
+            <code>
+                npx tsc --init
+            </code>
+        </pre>
+            <h5>Inde i denne konfigureringsfil skal du sikre dig, at der ved target indstillingen står "ES6".</h5>
+            <h4>6. Opret en TypeScript fil</h4>
+            <h5>For at oprette en TypeScript fil, skal du give din fil endelsen '.ts'.</h5>
+            <h4>7. Compiling af TypeScript fil</h4>
+            <h5>Når du har skrevet noget TypeScript kode, skal du huske at compile din fil. Dette skal gøres hver gang
+                du har skrevet noget ny kode. Du skriver følgende kommando i terminalen:</h5>
+            <pre>
+            <code>
+                npx tsc
+            </code>
+        </pre>
+            <h4>8. Du er nu klar til at kode i TypeScript!</h4>
+        </div>
+    </main>
+    <footer>
+        <p>©TS PRO, All rights Reserved</p>
+        <img src="assets/images/TS PRO 2.svg" alt="">
+    </footer>
+</body>
+
+</html>

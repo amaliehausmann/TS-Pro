@@ -1,0 +1,23 @@
+@use '../helpers/variables' as *;
+
+footer{
+    background-color: $black;
+    color: $white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vw 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    p{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1vw;
+    }
+
+    img{
+        display: block;
+        margin: auto;
+    }
+}
