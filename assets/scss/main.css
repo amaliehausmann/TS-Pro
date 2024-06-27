@@ -44,6 +44,10 @@ button a {
   height: 5vw;
 }
 
+.spacingBottom {
+  height: 10vw;
+}
+
 .menu {
   width: 4vw;
   background-color: #5355D6;
@@ -183,6 +187,45 @@ footer img {
   font-weight: 700;
 }
 
+.statictyping h2 {
+  font-size: 2vw;
+}
+.statictyping h3 {
+  font-size: 1.5vw;
+  padding: 0 18vw;
+}
+.statictyping h4 {
+  font-size: 1.5vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #5355D6;
+  margin-left: 10vw;
+}
+.statictyping h5 {
+  font-size: 1.2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 10vw;
+  width: 50vw;
+}
+.statictyping h6 {
+  font-size: 0.9vw;
+  margin-left: 10vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 50vw;
+}
+.statictyping pre {
+  background-color: #3537bc;
+  margin-left: 10vw;
+  width: 85vw;
+  border-radius: 10px;
+}
+.statictyping pre code {
+  color: white;
+  font-size: 1vw;
+}
+.statictyping .inference {
+  padding-bottom: 10vw;
+}
+
 .install {
   padding-bottom: 10vw;
 }
@@ -216,6 +259,39 @@ footer img {
   margin-left: 10vw;
 }
 .install pre code {
+  color: #FFFFFF;
+  font-size: 1vw;
+}
+
+.interfaces {
+  padding-bottom: 10vw;
+}
+.interfaces h2 {
+  font-size: 2vw;
+}
+.interfaces h4 {
+  font-size: 1.5vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 10vw;
+  color: #5355D6;
+}
+.interfaces h5 {
+  margin-left: 10vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1vw;
+  width: 70vw;
+}
+.interfaces h6 {
+  margin-left: 10vw;
+  font-size: 1vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.interfaces pre {
+  background-color: #3537bc;
+  width: 70vw;
+  margin-left: 10vw;
+  border-radius: 10px;
   color: #FFFFFF;
   font-size: 1vw;
 }

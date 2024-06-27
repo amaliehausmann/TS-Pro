@@ -1,0 +1,40 @@
+@use '../helpers/variables' as *;
+
+.interfaces{
+    padding-bottom: 10vw;
+
+    h2{
+        font-size: 2vw;
+    }
+
+    h4{
+        font-size: 1.5vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 10vw;
+        color: $blue;
+    }
+
+    h5{
+        margin-left: 10vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1vw;
+        width: 70vw;
+    }
+
+    h6{
+        margin-left: 10vw;
+        font-size: 1vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+    }
+
+    pre{
+        background-color: $darkerBlue;
+        width: 70vw;
+        margin-left: 10vw;
+        border-radius: 10px;
+        color: $white;
+        font-size: 1vw;
+    }
+
+}

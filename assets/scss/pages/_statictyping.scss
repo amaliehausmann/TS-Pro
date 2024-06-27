@@ -1,1 +1,48 @@
 @use '../helpers/variables' as *;
+
+.statictyping{
+    h2{
+        font-size: 2vw;
+    }
+
+    h3{
+        font-size: 1.5vw;
+        padding: 0 18vw;
+    }
+
+    h4{
+        font-size: 1.5vw;
+        font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: $blue;
+        margin-left: 10vw;
+    }
+
+    h5{
+        font-size: 1.2vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 10vw;
+        width: 50vw;
+    }
+
+    h6{
+        font-size: 0.9vw;
+        margin-left: 10vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 50vw;
+    }
+
+    pre{
+        background-color: $darkerBlue;
+        margin-left: 10vw;
+        width: 85vw;
+        border-radius: 10px;
+        code{
+            color: white;
+            font-size: 1vw;
+        }
+    }
+
+    .inference{
+        padding-bottom: 10vw;
+    }
+}
