@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS PRO: Interfaces</title>
+    <link rel="icon" href="./assets/images/TS.svg" type="image/x-icon">
+    <script src="./assets/TS/index.js" defer type="module"></script>
+    <link rel="stylesheet" href="./assets/scss/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="" alt="">
+        <a href="index.html"> <img src="./assets/images/TS PRO 2.svg" alt=""></a>
+    </header>
+    <main>
+        <div class="menu" id="menu">
+            <img id="openArrow" src="./assets/images/icons/arrow-next-small-svgrepo-com.svg" alt="">
+            <img id="closeArrow" src="./assets/images/icons/arrow-prev-small-svgrepo-com.svg" alt="">
+            <div id="navigation">
+                <a href="getStarted.html">Get Started</a>
+                <a href="installation.html">Installation</a>
+                <a href="statictyping.html">Static Typing</a>
+                <a href="interfaces.html">Interfaces</a>
+                <a href="arrays.html">Arrays og Tuples</a>
+                <a href="">Link Six</a>
+                <a href="">Link Seven</a>
+                <a href="">Link Eight</a>
+                <a href="">Link Nine</a>
+                <a href="">Link Ten</a>
+            </div>
+        </div>
+        <div class="spacingTop"></div>
+        <section class="interfaces">
+            <h2>Interfaces</h2>
+            <h3>Man anvender interfaces til at definere strukturen af et objekt</h3>
+            <h4>Eksempel på interface:</h4>
+            <pre>
+                <code>
+                    interface Cat {
+                        name: string;
+                        age: number;
+                        isCute: boolean;
+                    }
+
+                    let cat: Cat = {
+                        name: 'kiwi',
+                        age: 2,
+                        isCute: true
+                    }
+                </code>
+            </pre>
+            <h5>I dette eksempel definerer 'Cat' interface at et hver objekt af typen 'Cat' skal have:</h4>
+            <h6>Et 'name' som er af typen string</h6>
+            <h6>En 'age' som er af typen number</h6>
+            <h6>En 'isCute' af typen boolean</h6>
+            <h4>Extending</h4>
+            <h5>Man kan extende andre interfaces med interfaces. Dette giver muligheden for at bygge mere komplekse interfaces udfra en simpel en. Man kan sammenligne det med at lave en udbygning på et hus.</h5>
+            <h5>Eksempel på extending:</h5>
+            <pre>
+                <code>
+                    interface Cat {
+                        name: string;
+                        age: number;
+                        isCute: boolean;
+                    }
+
+                    interface catRace extends Cat{
+                        race: string;
+                    }
+
+                    let cat: catRace ={
+                        name: 'pandekage',
+                        age: 3,
+                        isCute: true,
+                        race: 'munchkin'
+                    } 
+                </code>
+            </pre>
+            <h4>Declaration Merging</h4>
+            <h5>Man kan merge interfaces. Hvis man definerer to interfaces med samme navn, vil Typescript kombinerer dem til et enkelt interface</h5>
+            <h5>Eksempel på merging:</h5>
+            <pre>
+                <code>
+                    Interface Cat {
+                        name: string;
+                        age: number;
+                        isCute: boolean;
+                    }
+
+                    interface Cat {
+                        race: string;
+                    }
+
+                    let myCat: Cat = {
+                        name: 'kakao',
+                        age: 4,
+                        isCute: true,
+                        race: 'British Shorthair'
+                    }
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>©TS PRO, All rights Reserved</p>
+        <img src="assets/images/TS PRO 2.svg" alt="">
+    </footer>
+</body>
+
+</html>

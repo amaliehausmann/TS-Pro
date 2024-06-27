@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TS PRO: Installation</title>
+    <title>TS PRO: Static Typing</title>
     <link rel="icon" href="./assets/images/TS.svg" type="image/x-icon">
     <script src="./assets/TS/index.js" defer type="module"></script>
     <link rel="stylesheet" href="./assets/scss/main.css">
@@ -23,8 +23,8 @@
                 <a href="getStarted.html">Get Started</a>
                 <a href="installation.html">Installation</a>
                 <a href="statictyping.html">Static Typing</a>
-                <a href="">Link Four</a>
-                <a href="">Link Five</a>
+                <a href="interfaces.html">Interfaces</a>
+                <a href="arrays.html">Arrays og Tuples</a>
                 <a href="">Link Six</a>
                 <a href="">Link Seven</a>
                 <a href="">Link Eight</a>
@@ -33,6 +33,71 @@
             </div>
         </div>
         <div class="spacingTop"></div>
+        <section class="statictyping">
+            <h2>Static Typing</h2>
+            <h3>En af de primære funktioner i TypeScript er Static Typing. Herunder vil jeg forklare hvordan man anvender Static Typing, samt forskellen på Static og Dynamic typing.</h3>
+            <h4>Static vs. Dynamic Typing</h4>
+            <section class="dynVsSta">
+                <section>
+                    <h5>JS: Dynamic</h5>
+                    <h6>I JavaScript anvender vi Dynamic Typing. Det betyder, at variabler kan holde værdier af enhver type, og at disse typer kan ændrer sig når programmet kører. Selvom dette er fleksibelt, kan det føre til runtime-errors!</h6>
+                    <h6>Eksempel på Dynamic Typing:</h6>
+                    <pre>
+                        <code>
+                            let message = 'Hello World!';
+                            message = 12;
+                            console.log(message); <b> //Output: 12</b>
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h5>TS: Static</h5>
+                    <h6>TypeScript håndhæver type constraints, når programmet kører, som kan reducerer mængden af runtime-errors. Man kan angive typer for bl.a. variabler og funktionsparametre.</h6>
+                    <h6>Eksempl på Static Typing:</h6>
+                    <pre>
+                        <code>
+                            let message: string = 'Hello World!';
+                            message = 12; <b>//Fejl: Typen 'number' kan ikke tildeles til typen 'string'</b>
+                            console.log(message); <b>//Output: 'Hello World!'</b>
+                        </code>
+                    </pre>
+                </section>
+            </section>
+            <section class="annotations">
+                <h4>Type Annotationer</h4>
+                <h5>Type Annotationer bruges til at specificere typen af en variabel, et funktionsparameter eller en returværdi. De annoteres på følgende måde:</h5>
+                <h5>Variabler:</h5>
+                <pre>
+                    <code>
+                        let count: number = 7;
+                        let username: string = 'Mathias';
+                        let isAdmin: boolean = true;
+                    </code>
+                </pre>
+                <h5>Funktionsparametre og returværdi:</h5>
+                <pre>
+                    <code>
+                        function greetUser (name: string): string { //Første annotering definerer parameter typen, anden annotering returværdiens type
+                            return `Hello, ${name}!`;
+                        }
+
+                        console.log(greetUser('Mathias')); <b>//Output: 'Hello, Mathias!</b>
+                        console.log(greetUser(123)); <b>//Fejl: Argument af type 'number' kan ikke tildeles til parameter af type 'string' </b>
+                    </code>
+                </pre>
+            </section>
+            <section class="inference">
+                <h4>Type Inference</h4>
+                <h5>TypeScript kan godt automatisk udlede typer baseret på de tildelte værdier, som kan være med til at reducere behovet for eksplicitte type annotationer</h5>
+                <h5>Eksempel:</h5>
+                <pre>
+                    <code>
+                        let count = 5; <b>//Udledes som typen 'number'</b>
+                        count = 'fem'; <b>//Fejl: Typen 'string' kan ikke tildeles til typen 'number'</b>
+                    </code>
+                </pre>
+            </section>
+        </section>
     </main>
     <footer>
         <p>©TS PRO, All rights Reserved</p>
