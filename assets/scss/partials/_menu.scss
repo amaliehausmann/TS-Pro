@@ -6,16 +6,19 @@
     height: 101%;
     padding-top: 1vw;
     position: absolute;
+    transition: 250ms;
 
     #openArrow{
         width: 2.5vw;
         margin-left: 1.3vw;
         margin-top: 0;
+        cursor: pointer;
     }
 
     #closeArrow{
         width: 2.5vw;
         display: none;
+        cursor: pointer;
     }
 
     #navigation{

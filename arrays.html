@@ -25,14 +25,56 @@
                 <a href="statictyping.html">Static Typing</a>
                 <a href="interfaces.html">Interfaces</a>
                 <a href="arrays.html">Arrays og Tuples</a>
-                <a href="">Link Six</a>
-                <a href="">Link Seven</a>
-                <a href="">Link Eight</a>
-                <a href="">Link Nine</a>
-                <a href="">Link Ten</a>
+                <a href="union.html">Union Types</a>
             </div>
         </div>
         <div class="spacingTop"></div>
+        <section class="arrays">
+            <h2>Arrays og Tuples</h2>
+            <h3>Når det kommer til arrays, kan vi også definerer typen af arrayets indhold.</h3>
+            <h4>Arrays</h4>
+            <h5>Et array, er en samling af værdier, som alle har same type. Når vi vil specificerer typen af et array i TypeScript gør vi på følgende måde:</h5>
+            <pre>
+                <code>
+                    let numbers: number[] = [1, 2, 3, 4, 5];
+                    let names: string[] = ['Mathias', 'Amalie', 'Kasper'];
+                </code>
+            </pre>
+            <h5>Her fortæller 'number[]' at 'numbers' er et array af tal og 'string[]' siger, at 'names' er et array af strings.</h5>
+            <h5>Man kan også definerer arrays på en anden måde, det ser du herunder:</h5>
+            <pre>
+                <code>
+                    let numbers: Array&lt;number&gt; = [1, 2, 3, 4, 5];
+                </code>
+            </pre>
+            <h5>Arrays i brug:</h5>
+            <pre>
+                <code>
+                    let cars: string[] = ['toyota', 'chevrolet', 'skoda'];
+                    console.log(cars[2]); <b>//Output: 'skoda'</b>
+                    cars.push('tesla');
+                    console.log(cars); <b>// Output: ['toyota', 'chevrolet', 'skoda', 'tesla']</b>
+                </code>
+            </pre>
+            <h4>Tuples</h4>
+            <h5>En tuple er et array med en fast længde, hvor hvert element kan have sin egen type</h5>
+            <h5>Eksempel på Tuples:</h5>
+            <pre>
+                <code>
+                    let student: [string, number] = ['Mathias', 8];
+                </code>
+            </pre>
+            <h5>Her fortæller '[string, number]' at 'student' er en tuple, hvor det første element er en 'string' og det andet element er et 'number'.</h5>
+            <h5>Tuples i brug:</h5>
+            <pre>
+                <code>
+                    let address: [string, number, string] = ['Øster Uttrup Vej', 1, 'Aalborg'];
+                    console.log(address[0]); <b>//Output: 'Øster Uttrup Vej'</b>
+                    console.log(address[1]); <b>//Output: 1</b>
+                    console.log(address[2]); <b>//Output: 'Aalborg'</b>
+                </code>
+            </pre>
+        </section>
     </main>
     <footer>
         <p>©TS PRO, All rights Reserved</p>

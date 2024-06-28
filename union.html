@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS PRO: Union Types</title>
+    <link rel="icon" href="./assets/images/TS.svg" type="image/x-icon">
+    <script src="./assets/TS/index.js" defer type="module"></script>
+    <link rel="stylesheet" href="./assets/scss/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="" alt="">
+        <a href="index.html"> <img src="./assets/images/TS PRO 2.svg" alt=""></a>
+    </header>
+    <main>
+        <div class="menu" id="menu">
+            <img id="openArrow" src="./assets/images/icons/arrow-next-small-svgrepo-com.svg" alt="">
+            <img id="closeArrow" src="./assets/images/icons/arrow-prev-small-svgrepo-com.svg" alt="">
+            <div id="navigation">
+                <a href="getStarted.html">Get Started</a>
+                <a href="installation.html">Installation</a>
+                <a href="statictyping.html">Static Typing</a>
+                <a href="interfaces.html">Interfaces</a>
+                <a href="arrays.html">Arrays og Tuples</a>
+                <a href="union.html">Union Types</a>
+            </div>
+        </div>
+        <div class="spacingTop"></div>
+        <section class="union">
+            <h2>Union Types</h2>
+            <h3>Union Types i TypeScript giver mulighed for at definere en variabel som indeholder mere end én type værdi. Det er nyttigt da det giver mere fleksibilitet samtidigt med at type-sikkerheden bevares.</h3>
+            <h4>Definering med Union Types</h4>
+            <h5>Eksempel på hvordan man definerer en variabel med mere end én type:</h5>
+            <pre>
+                <code>
+                    let værdi: string | number;
+                </code>
+            </pre>
+            <h5>Her kan 'værdi', altså enten være en 'string' eller et 'number'.</h5>
+            <h4>Brug af union types</h4>
+            <h5>Man kan anvende union types til at tillade en variabel at acceptere forskellige værdier.</h5>
+            <h5>Eksempel:</h5>
+            <pre>
+                <code>
+                    let værdi: string | number;
+
+                    værdi = 'hej'; <b>//Dette er tilladt</b>
+                    værdi = 12; <b>//Dette er også tilladt</b>
+                    værdi = true; <b>//Dette vil forårsage en fejl, da boolean ikke er en tilladt type i vores definition</b>
+                </code>
+            </pre>
+            <h4>Union types i funktioner og arrays</h4>
+            <h5>Union type i en funktion:</h5>
+            <pre>
+                <code>
+                    function printId(id: number | string) {
+                        console.log('Dit ID er:' + id);
+                    }
+
+                    printId(101); <b>//Dette er tilladt</b>
+                    printId('202'); <b>//Dette er også tilladt</b>
+                    printId(true); <b>//Dette vil forårsage en fejl, da boolean ikke er en tilladt type i vores definition af id</b>
+                </code>
+            </pre>
+            <h5>Union type i et array:</h5>
+            <pre>
+                <code>
+                    let array: (number | string)[] = [1, 'to', 3, 'fire'];
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>©TS PRO, All rights Reserved</p>
+        <img src="assets/images/TS PRO 2.svg" alt="">
+    </footer>
+</body>
+
+</html>

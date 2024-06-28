@@ -1,0 +1,35 @@
+@use '../helpers/variables' as *;
+
+.arrays{
+    padding-bottom: 10vw;
+
+    h2{
+        font-size: 2vw;
+    }
+
+    h4{
+        margin-top: 4vw;
+        margin-left: 10vw;
+        font-size: 1.5vw;
+        color: $blue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h5{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1vw;
+        margin-left: 10vw;
+    }
+
+    pre{
+        background-color: $darkerBlue;
+        width: 70vw;
+        margin-left: 10vw;
+        border-radius: 10px;
+
+        code{
+            color: $white;
+            font-size: 1vw;
+        }
+    }
+}
